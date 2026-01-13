@@ -163,7 +163,7 @@ kubectl create secret generic llmops-secrets \
   --from-literal=HUGGINGFACEHUB_API_TOKEN=""
 
 
-kubectl apply -f flask-deployment.yaml
+kubectl apply -f flask-deployment-k8s.yaml
 
 
 kubectl get pods
