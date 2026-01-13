@@ -1,0 +1,37 @@
+# Python environment and cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.python-version
+
+# Poetry
+.cache/pypoetry/
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# IDEs
+.vscode/
+.idea/
+
+# LLM / Data Science specific
+# (Ignore local data if you are pulling it from AstraDB/Datasets in production)
+data/
+*.csv
+*.jsonl
+*.pdf
+
+# Environment variables
+.env
+
+# Logs and monitoring
+*.log
+prometheus_data/
