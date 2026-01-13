@@ -22,7 +22,7 @@ class RAGChainBuilder:
 
     def _get_history(self, session_id:str) -> BaseChatMessageHistory:
         if session_id not in self.history_store:
-            self.history_store[session_id] = ChatMessageHistory
+            self.history_store[session_id] = ChatMessageHistory()
 
         return self.history_store[session_id]
     
@@ -62,5 +62,4 @@ class RAGChainBuilder:
             history_messages_key='chat_history',
             output_messages_key= 'answer'
         )
-    
     
